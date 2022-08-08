@@ -1,14 +1,14 @@
 package ru.cifrium
 
 fun main () {
-    var itemLikes: Int = 11
-     var itemPeople = ""
+    var itemLikes: Int = 118
+    var itemPeople = "People"
+    var itemLast: Int = itemLikes%10
+    var itemLast2: Int = itemLikes%100
 
-    if (itemLikes == 1)  {
-        itemPeople = "Человеку"}
+    if (itemLast == 1 && itemLast2 != 11)  {
+        itemPeople = "Person"
+    }
 
-    if (itemLikes !=1) {
-        itemPeople = "Людям"}
-
-    println("Понравилось $itemLikes $itemPeople")
+    println("Likes $itemLikes $itemPeople")
 }
